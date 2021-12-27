@@ -26,7 +26,7 @@ The segmentation based on the shape of the Nucleus cell is not reliable,
 because, for each image, it is necessary to modify the number of times
 of erosion of dilation.
 
-![image](figure1.png)
+![ kkkkkkkkkkkkk](figure1.png)
 
 Segmentation by color :
 -----------------------
