@@ -26,7 +26,8 @@ The segmentation based on the shape of the Nucleus cell is not reliable,
 because, for each image, it is necessary to modify the number of times
 of erosion of dilation.
 
-![ kkkkkkkkkkkkk](figure1.png)
+![image](figure1.png)
+(a) Originale image; (b) Binary Gradient Mask; (c) Dilated Gradient Mask; (d) Binary Image with Filled Holes and Cleared Border; (e)  Segmented Image; (f) Mask Over Original Image;
 
 Segmentation by color :
 -----------------------
@@ -73,6 +74,8 @@ noise, by removing the small objects from the foreground of the image,
 and placing them in the background (Figure 2: f).
 
 ![image](figure2.png)
+(a) Originale image; (b) Extracting the blue plane; (c) Histogram of extracted blue plane; (d) Binarization; (e)  Remove small objects from binary image; (f) Morphologically open and close image;
+
 
 Splitting of touching nuclei and cells
 ======================================
@@ -92,11 +95,12 @@ at the desired locations, and then repeat the watershed steps (Figure 3:
 f).
 
 ![image](figure3.png)
+(a) Mask Over Original Image; (b) Distance Transform of Binary Image; (c) Complement of Distance Transform; (d) Watershed Transform; (e) Produce small spots that are roughly in the middle of the cells; (f) Final result
 
 Conclusion
 ==========
 
-In this paper, we present a model of WBC segmentation, which first
+We present a model of WBC segmentation, which first
 detects and then segments to achieve accurate WBC segmentation. In the
 detection stage, we used the method of shape detection to detect the
 contour and the entire cell and visualize the segmentation of the image
