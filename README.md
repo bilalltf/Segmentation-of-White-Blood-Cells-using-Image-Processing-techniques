@@ -48,7 +48,7 @@ and apply to all images without any modification.
 
 In order to make the nuclei more evident, we used a simple equation to
 extract the blue plane from RGB color space (Figure 2: b), describes as:
-BPlane = I_B  - 0.5*I_R - 0.5*I_G
+BPlane = I_B  - 0.5 * I_R - 0.5 * I_G
 
 ### Thresholding
 
