@@ -26,7 +26,7 @@ The segmentation based on the shape of the Nucleus cell is not reliable,
 because, for each image, it is necessary to modify the number of times
 of erosion of dilation.
 
-![image](00.png)
+![image](figure 1.png)
 
 Segmentation by color :
 -----------------------
@@ -48,7 +48,7 @@ and apply to all images without any modification.
 
 In order to make the nuclei more evident, we used a simple equation to
 extract the blue plane from RGB color space (Figure 2: b), describes as:
-$$BPlane = I_{B}  - 0.5*(I_{R}) - 0.5*(I_{G})$$
+BPlane = I_B  - 0.5*I_R - 0.5*I_G
 
 ### Thresholding
 
@@ -72,7 +72,7 @@ Together with the closing, we used the opening operation to remove the
 noise, by removing the small objects from the foreground of the image,
 and placing them in the background (Figure 2: f).
 
-![image](01.png)
+![image](figure 2.png)
 
 Splitting of touching nuclei and cells
 ======================================
@@ -91,7 +91,7 @@ The final step is to modify the distance transform so it only has minima
 at the desired locations, and then repeat the watershed steps (Figure 3:
 f).
 
-![image](02.png)
+![image](figure 3.png)
 
 Conclusion
 ==========
