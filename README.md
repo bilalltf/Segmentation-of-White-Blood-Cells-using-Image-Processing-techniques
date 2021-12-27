@@ -26,7 +26,7 @@ The segmentation based on the shape of the Nucleus cell is not reliable,
 because, for each image, it is necessary to modify the number of times
 of erosion of dilation.
 
-![image](figure 1.png)
+![image](figure1.png)
 
 Segmentation by color :
 -----------------------
@@ -72,7 +72,7 @@ Together with the closing, we used the opening operation to remove the
 noise, by removing the small objects from the foreground of the image,
 and placing them in the background (Figure 2: f).
 
-![image](figure 2.png)
+![image](figure2.png)
 
 Splitting of touching nuclei and cells
 ======================================
@@ -91,7 +91,7 @@ The final step is to modify the distance transform so it only has minima
 at the desired locations, and then repeat the watershed steps (Figure 3:
 f).
 
-![image](figure 3.png)
+![image](figure3.png)
 
 Conclusion
 ==========
